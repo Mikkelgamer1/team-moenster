@@ -563,14 +563,14 @@ const medaljebane = (idag) => {
       <div class="medaljer__rul" tabindex="0" role="region" aria-label="Medaljebanen – kan rulles sidelæns">
         <div class="medaljer__bane" role="img" aria-label="DM-medaljer: ${DM.map(([aar, m]) => `${NAVN[m].toLowerCase()} ${aar}`).join(', ')}. Desuden Dansk Trav Derby 2012 og europamester for kuske 2014.">
           ${aarstal.map((a) => `<span class="medaljer__aar" style="left:${x(a)}%">${a}</span>`).join('')}
-          ${DM.map(([aar, m]) => `<i class="medalje medalje--${m}" style="left:${x(aar)}%" title="${NAVN[m]} ${aar}"></i>`).join('')}
+          ${DM.map(([aar, m], n) => `<i class="medalje medalje--${m}" style="left:${x(aar)}%;--n:${n}" title="${NAVN[m]} ${aar}"></i>`).join('')}
           ${MAERKER.map(([aar, tekst, k]) => `<span class="medaljer__maerke medaljer__maerke--${k}" style="left:${x(aar)}%">${tekst} ${aar}</span>`).join('')}
         </div>
       </div>
       <dl class="medaljer__tal">
-        <div><dt>Guld</dt><dd>${antal('g')}</dd></div>
-        <div><dt>Sølv</dt><dd>${antal('s')}</dd></div>
-        <div><dt>Bronze</dt><dd>${antal('b')}</dd></div>
+        <div><dt>Guld</dt><dd data-tael="${antal('g')}">${antal('g')}</dd></div>
+        <div><dt>Sølv</dt><dd data-tael="${antal('s')}">${antal('s')}</dd></div>
+        <div><dt>Bronze</dt><dd data-tael="${antal('b')}">${antal('b')}</dd></div>
         <div><dt>EM for kuske</dt><dd>Guld 2014</dd></div>
       </dl>
     </div>`;
@@ -588,8 +588,8 @@ const michelleSektion = (o, cls = '') => `
       <p class="pokal" data-vis style="--i:2"><b>5×</b><span>Årets Montérytter ved Hestesportens Galla</span></p>
       <p class="indled" data-vis style="--i:3">${SITE.fornavn}s datter sad i sadlen allerede som toårig og gik efter 10. klasse fuldtid ind i familiens stald. I dag rider og kører hun staldens heste i både monté og sulky.</p>${o.michelle ? `
       <dl class="mini-tal" data-vis style="--i:4">
-        <div><dt>Sejre i ${o.michelle.aar}</dt><dd>${o.michelle.sejre}</dd></div>
-        <div><dt>Starter</dt><dd>${o.michelle.starter}</dd></div>
+        <div><dt>Sejre i ${o.michelle.aar}</dt><dd data-tael="${o.michelle.sejre}">${o.michelle.sejre}</dd></div>
+        <div><dt>Starter</dt><dd data-tael="${o.michelle.starter}">${o.michelle.starter}</dd></div>
         <div><dt>Sejrsprocent</dt><dd>${o.michelle.procent}&nbsp;%</dd></div>
       </dl>` : ''}
       <p class="valg" data-vis style="--i:5">${ekstern(SITE.michelle.travinfo, 'Michelles profil på Travinfo')}</p>
@@ -606,7 +606,8 @@ const forside = (o, idag) => `
       ${etiket('Travtræner og kusk · Skive Trav')}
       <h1><span class="sr">${SITE.person} – </span>Team <span>Mønster</span></h1>
       <p class="hero__indled">${SITE.person} har været selvstændig travtræner i Skive siden 1. maj 1993 – i dag fra familiens gård i ${SITE.sted}. Dansk mester for professionelle travtrænere i 2008 og 2026 og europamester for kuske i 2014.</p>
-      <p class="valg">${knap('kontakt/', `Kontakt ${SITE.fornavn}`)} ${knap('heste/', 'Se hestene', 'knap--kant')}</p>
+      <p class="valg">${knap('kontakt/', `Kontakt ${SITE.fornavn}`)} ${knap('heste/', 'Se hestene', 'knap--kant')}</p>${o.kommende[0] ? `
+      <p class="naeste"><i aria-hidden="true"></i><span>Næste start</span><b>${esc(o.kommende[0].hest)}</b>${ugedag(o.kommende[0].dato)} ${kortDato(o.kommende[0].dato)} · ${esc(bane(o.kommende[0].bane))}${o.kommende[0].kusk ? ` · ${esc(kuskVist(o.kommende[0].kusk))}` : ''}</p>` : ''}
     </div>
     <figure class="skraa hero__foto">
       ${billede('tribune', 'Team Mønster i de rød-hvide farver foran en fyldt tribune', { sizes: '(min-width: 901px) 48vw, 100vw', lazy: false })}
@@ -618,10 +619,10 @@ const forside = (o, idag) => `
 <section class="tal" aria-label="Stalden i tal">
   <div class="wrap">
     <dl>
-      <div><dt>heste i træning</dt><dd>${o.heste.length}</dd></div>
-      <div><dt>sejre som træner i ${o.saeson.aar}</dt><dd>${o.saeson.sejre}</dd></div>
-      <div><dt>sejre som kusk i ${o.kusk.aar}</dt><dd>${o.kusk.sejre}</dd></div>
-      <div><dt>år som selvstændig træner</dt><dd>${o.aarSelvstaendig}</dd></div>
+      <div><dt>heste i træning</dt><dd data-tael="${o.heste.length}">${o.heste.length}</dd></div>
+      <div><dt>sejre som træner i ${o.saeson.aar}</dt><dd data-tael="${o.saeson.sejre}">${o.saeson.sejre}</dd></div>
+      <div><dt>sejre som kusk i ${o.kusk.aar}</dt><dd data-tael="${o.kusk.sejre}">${o.kusk.sejre}</dd></div>
+      <div><dt>år som selvstændig træner</dt><dd data-tael="${o.aarSelvstaendig}">${o.aarSelvstaendig}</dd></div>
     </dl>
   </div>
 </section>
@@ -919,12 +920,12 @@ ${sidehoved({
   <div class="wrap">
     ${etiket(`Sæson ${o.saeson.aar} som træner`, ' data-vis')}
     <dl class="kpi" data-vis>
-      <div><dt>Starter</dt><dd>${o.saeson.starter}</dd></div>
-      <div><dt>Sejre</dt><dd>${o.saeson.sejre}</dd></div>
-      <div><dt>2.-pladser</dt><dd>${o.saeson.toer}</dd></div>
-      <div><dt>3.-pladser</dt><dd>${o.saeson.treer}</dd></div>
+      <div><dt>Starter</dt><dd data-tael="${o.saeson.starter}">${o.saeson.starter}</dd></div>
+      <div><dt>Sejre</dt><dd data-tael="${o.saeson.sejre}">${o.saeson.sejre}</dd></div>
+      <div><dt>2.-pladser</dt><dd data-tael="${o.saeson.toer}">${o.saeson.toer}</dd></div>
+      <div><dt>3.-pladser</dt><dd data-tael="${o.saeson.treer}">${o.saeson.treer}</dd></div>
       <div><dt>Sejrsprocent</dt><dd>${o.saeson.procent}<small>%</small></dd></div>
-      <div><dt>Indkørt</dt><dd>${nf(o.saeson.praemier)}<small>kr.</small></dd></div>
+      <div><dt>Indkørt</dt><dd><span data-tael="${o.saeson.praemier}">${nf(o.saeson.praemier)}</span><small>kr.</small></dd></div>
     </dl>
     <div class="formboks" data-vis style="--i:1">
       <h2 class="mini">Formkurve – de seneste ${o.seneste.length} starter</h2>
