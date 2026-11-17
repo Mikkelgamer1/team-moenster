@@ -126,7 +126,10 @@ h3 { font-weight: 700; }
 .hero__mester { position: absolute; right: 22px; top: 22px; z-index: 2; padding: 12px 16px; border-radius: 14px; background: #fff; box-shadow: 0 14px 40px rgba(0, 0, 0, .2); font: 600 .78rem/1.3 var(--sans); }
 .hero__mester b { display: block; font: italic 800 1.7rem/1 var(--display); color: var(--roed); text-transform: uppercase; }
 
-.tal { background: var(--roed); color: #fff; }
+.hero__foto::after { display: none; } /* på forsiden står striberne i talbåndet i stedet – rød mod rød flød sammen */
+.tal { position: relative; overflow: hidden; background: var(--roed); color: #fff; }
+.tal::after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 22%; background: repeating-linear-gradient(115deg, rgba(255, 255, 255, .16) 0 14px, transparent 14px 28px); pointer-events: none; }
+.tal .wrap { position: relative; z-index: 1; }
 .tal dl { display: grid; grid-template-columns: repeat(4, 1fr); }
 .tal dl > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; padding: 26px 0 24px 24px; border-left: 1px solid rgba(255, 255, 255, .3); }
 .tal dl > div:first-child { border-left: 0; padding-left: 0; }
@@ -428,6 +431,7 @@ h3 { font-weight: 700; }
   .sidehoved__tekst { padding-bottom: 8px; }
   .hero__tekst .valg { margin-bottom: 8px; }
   .tal dl { grid-template-columns: 1fr 1fr; }
+  .tal::after { width: 40%; }
   .tal dl > div:nth-child(3) { border-left: 0; padding-left: 0; }
   .tal dl > div:nth-child(n + 3) { border-top: 1px solid rgba(255, 255, 255, .3); }
   .sekhoved { display: block; }
