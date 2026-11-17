@@ -207,7 +207,6 @@ h3 { font-weight: 700; }
 .michelle { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(28px, 5vw, 80px); align-items: center; }
 .michelle__foto { position: relative; border-radius: 26px; overflow: hidden; aspect-ratio: 4 / 5; }
 .michelle__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 45% 30%; }
-.michelle__foto::after { content: ""; position: absolute; right: 0; top: 30px; width: 70px; height: 50%; background: repeating-linear-gradient(115deg, var(--roed) 0 10px, transparent 10px 20px); }
 .pokal { display: flex; align-items: center; gap: 14px; margin: 22px 0 14px; }
 .pokal b { font: italic 800 6.4rem/.8 var(--display); color: var(--roed); }
 .pokal span { max-width: 22ch; font-weight: 700; line-height: 1.25; }
