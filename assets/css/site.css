@@ -128,7 +128,7 @@ h3 { font-weight: 700; }
 
 .hero__foto::after { display: none; } /* på forsiden står striberne i talbåndet i stedet – rød mod rød flød sammen */
 .tal { position: relative; overflow: hidden; background: var(--roed); color: #fff; }
-.tal::after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 22%; background: repeating-linear-gradient(115deg, rgba(255, 255, 255, .16) 0 14px, transparent 14px 28px); pointer-events: none; }
+.tal::after { content: ""; position: absolute; right: -60px; top: 0; bottom: 0; width: calc(22% + 60px); background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .16) 0 14px, transparent 14px 28px); transform: skewX(-25deg); transform-origin: 0 100%; pointer-events: none; }
 .tal .wrap { position: relative; z-index: 1; }
 .tal dl { display: grid; grid-template-columns: repeat(4, 1fr); }
 .tal dl > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; padding: 26px 0 24px 24px; border-left: 1px solid rgba(255, 255, 255, .3); }
@@ -431,7 +431,7 @@ h3 { font-weight: 700; }
   .sidehoved__tekst { padding-bottom: 8px; }
   .hero__tekst .valg { margin-bottom: 8px; }
   .tal dl { grid-template-columns: 1fr 1fr; }
-  .tal::after { width: 40%; }
+  .tal::after { right: -100px; width: calc(45% + 100px); } /* båndet er højere på mobil, så den skrå blok skal være bredere */
   .tal dl > div:nth-child(3) { border-left: 0; padding-left: 0; }
   .tal dl > div:nth-child(n + 3) { border-top: 1px solid rgba(255, 255, 255, .3); }
   .sekhoved { display: block; }
