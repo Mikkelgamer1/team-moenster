@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-20T12:50:06.418Z",
+ "opdateret": "2026-11-21T12:36:08.764Z",
  "traener": {
   "foedt": 1967,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 183,
+   "starter": 185,
    "sejre": 14,
    "toer": 24,
    "treer": 24,
    "procent": 8,
-   "praemier": 622600
+   "praemier": 625100
   },
   {
    "aar": 2025,
@@ -56,7 +56,7 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 260,
+   "starter": 261,
    "sejre": 18,
    "toer": 29,
    "treer": 33,
@@ -104,12 +104,12 @@
   "statistik": [
    {
     "aar": 2026,
-    "starter": 42,
+    "starter": 43,
     "sejre": 13,
     "toer": 8,
     "treer": 3,
-    "procent": 31,
-    "praemier": 226260
+    "procent": 30,
+    "praemier": 228760
    },
    {
     "aar": 2025,
@@ -314,7 +314,7 @@
    "foedt": "2023-06-02",
    "far": "Broad Bahn (US)",
    "mor": "Belle Ami Butcher",
-   "starter": 8,
+   "starter": 9,
    "placeringer": "1-2-3",
    "praemier": 35500,
    "rekord": "15,4ak *16,1am"
@@ -392,13 +392,37 @@
    "foedt": "2015-05-07",
    "far": "Lavec Kronos (IT)",
    "mor": "Knowledge Face (SE)",
-   "starter": 116,
+   "starter": 117,
    "placeringer": "23-11-17",
-   "praemier": 1047505,
+   "praemier": 1050005,
    "rekord": "*14,2k 13,0m 11,6ak *14,2am"
   }
  ],
  "resultater": [
+  {
+   "id": "838367-646405",
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 7,
+   "hestId": 646405,
+   "hest": "Smokin Joe (SE)",
+   "placering": "4",
+   "tid": "16,0",
+   "distance": 2200,
+   "praemie": 2500
+  },
+  {
+   "id": "838363-657028",
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 3,
+   "hestId": 657028,
+   "hest": "Miss Universe",
+   "placering": "0",
+   "tid": "19,2a",
+   "distance": 2140,
+   "praemie": 0
+  },
   {
    "id": "838261-652936",
    "dato": "2026-11-13",
@@ -3701,22 +3725,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-20",
-   "bane": "Od",
-   "loeb": 3,
-   "hestId": 657028,
-   "hest": "Miss Universe",
-   "kusk": "Knud Mønster"
-  },
-  {
-   "dato": "2026-11-20",
-   "bane": "Od",
-   "loeb": 7,
-   "hestId": 646405,
-   "hest": "Smokin Joe (SE)",
-   "kusk": "Michelle Mønster"
-  },
   {
    "dato": "2026-11-23",
    "bane": "Sk",
