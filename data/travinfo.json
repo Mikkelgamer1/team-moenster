@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-23T14:33:09.016Z",
+ "opdateret": "2026-11-24T14:50:07.706Z",
  "traener": {
   "foedt": 1967,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 185,
+   "starter": 188,
    "sejre": 14,
    "toer": 24,
-   "treer": 24,
-   "procent": 8,
-   "praemier": 625100
+   "treer": 25,
+   "procent": 7,
+   "praemier": 630600
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 261,
+   "starter": 266,
    "sejre": 18,
-   "toer": 29,
-   "treer": 33,
+   "toer": 30,
+   "treer": 34,
    "procent": 7,
-   "praemier": 964725
+   "praemier": 977725
   },
   {
    "aar": 2025,
@@ -104,7 +104,7 @@
   "statistik": [
    {
     "aar": 2026,
-    "starter": 43,
+    "starter": 44,
     "sejre": 13,
     "toer": 8,
     "treer": 3,
@@ -184,10 +184,10 @@
    "foedt": "2018-06-03",
    "far": "Chipmate (US)",
    "mor": "Madigan Frisco",
-   "starter": 41,
+   "starter": 42,
    "placeringer": "3-6-7",
    "praemier": 80050,
-   "rekord": "17,4k 19,2m 14,3ak 15,1am"
+   "rekord": "17,4k 18,7m 14,3ak 15,1am"
   },
   {
    "id": 644219,
@@ -197,10 +197,10 @@
    "foedt": "2018-05-12",
    "far": "Repay Merci",
    "mor": "Shesa Vixi",
-   "starter": 77,
+   "starter": 78,
    "placeringer": "13-13-4",
-   "praemier": 267075,
-   "rekord": "*16,3m *12,8ak 13,0am"
+   "praemier": 269075,
+   "rekord": "*16,3m 12,4ak 13,0am"
   },
   {
    "id": 644416,
@@ -219,7 +219,7 @@
    "id": 651744,
    "navn": "Kesse Tårs",
    "alder": 5,
-   "koen": "Hingst",
+   "koen": "Vallak",
    "foedt": "2021-04-28",
    "far": "Donato Hanover (US)",
    "mor": "Tinita Tårs",
@@ -288,9 +288,9 @@
    "foedt": "2023-03-13",
    "far": "Wishing Stone (US)",
    "mor": "Ebony Blåbjerg",
-   "starter": 16,
-   "placeringer": "0-2-4",
-   "praemier": 51500,
+   "starter": 17,
+   "placeringer": "0-2-5",
+   "praemier": 55000,
    "rekord": "18,5k 20,3m 16,9ak 15,1am"
   },
   {
@@ -399,6 +399,42 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838394-644964",
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 7,
+   "hestId": 644964,
+   "hest": "Gaghan Frisco",
+   "placering": "0",
+   "tid": "18,7g",
+   "distance": 2020,
+   "praemie": 0
+  },
+  {
+   "id": "838388-644219",
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 6,
+   "hestId": 644219,
+   "hest": "Ginai",
+   "placering": "5",
+   "tid": "12,4a",
+   "distance": 1600,
+   "praemie": 2000
+  },
+  {
+   "id": "838387-655738",
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 655738,
+   "hest": "Maddie S",
+   "placering": "3",
+   "tid": "16,3a",
+   "distance": 2060,
+   "praemie": 3500
+  },
   {
    "id": "838367-646405",
    "dato": "2026-11-20",
@@ -3726,35 +3762,43 @@
  ],
  "kommende": [
   {
-   "dato": "2026-11-23",
-   "bane": "Sk",
-   "loeb": 2,
-   "hestId": 655738,
-   "hest": "Maddie S",
-   "kusk": "Knud Mønster"
-  },
-  {
-   "dato": "2026-11-23",
-   "bane": "Sk",
-   "loeb": 6,
-   "hestId": 644219,
-   "hest": "Ginai",
-   "kusk": "Knud Mønster"
-  },
-  {
-   "dato": "2026-11-23",
-   "bane": "Sk",
-   "loeb": 7,
-   "hestId": 644964,
-   "hest": "Gaghan Frisco",
-   "kusk": "Michelle Mønster"
-  },
-  {
    "dato": "2026-11-27",
    "bane": "År",
    "loeb": 3,
    "hestId": 657028,
    "hest": "Miss Universe",
+   "kusk": "Knud Mønster"
+  },
+  {
+   "dato": "2026-11-30",
+   "bane": "Sk",
+   "loeb": 1,
+   "hestId": 657409,
+   "hest": "Moulin Rouge Cash",
+   "kusk": "Knud Mønster"
+  },
+  {
+   "dato": "2026-11-30",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 658831,
+   "hest": "Fly With Me (SE)",
+   "kusk": "Knud Mønster"
+  },
+  {
+   "dato": "2026-11-30",
+   "bane": "Sk",
+   "loeb": 4,
+   "hestId": 656814,
+   "hest": "Miami",
+   "kusk": "Knud Mønster"
+  },
+  {
+   "dato": "2026-11-30",
+   "bane": "Sk",
+   "loeb": 6,
+   "hestId": 653785,
+   "hest": "Laurentia Mosebo",
    "kusk": "Knud Mønster"
   }
  ]
