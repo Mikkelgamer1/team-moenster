@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-27T13:48:58.479Z",
+ "opdateret": "2026-11-28T12:56:45.817Z",
  "traener": {
   "foedt": 1967,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 188,
+   "starter": 189,
    "sejre": 14,
    "toer": 24,
    "treer": 25,
    "procent": 7,
-   "praemier": 630600
+   "praemier": 632600
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 266,
+   "starter": 269,
    "sejre": 18,
    "toer": 30,
    "treer": 34,
    "procent": 7,
-   "praemier": 977725
+   "praemier": 979725
   },
   {
    "aar": 2025,
@@ -314,9 +314,9 @@
    "foedt": "2023-06-02",
    "far": "Broad Bahn (US)",
    "mor": "Belle Ami Butcher",
-   "starter": 9,
+   "starter": 10,
    "placeringer": "1-2-3",
-   "praemier": 35500,
+   "praemier": 37500,
    "rekord": "15,4ak *16,1am"
   },
   {
@@ -399,6 +399,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838447-657028",
+   "dato": "2026-11-27",
+   "bane": "År",
+   "loeb": 3,
+   "hestId": 657028,
+   "hest": "Miss Universe",
+   "placering": "5",
+   "tid": "19,5ag",
+   "distance": 2300,
+   "praemie": 2000
+  },
   {
    "id": "838394-644964",
    "dato": "2026-11-23",
@@ -3761,14 +3773,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-27",
-   "bane": "År",
-   "loeb": 3,
-   "hestId": 657028,
-   "hest": "Miss Universe",
-   "kusk": "Knud Mønster"
-  },
   {
    "dato": "2026-11-30",
    "bane": "Sk",
